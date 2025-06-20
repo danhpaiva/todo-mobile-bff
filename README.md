@@ -61,7 +61,7 @@ As seguintes tecnologias foram utilizadas neste projeto:
 
 - IDE: <a href="https://visualstudio.microsoft.com/pt-br/vs/">Visual Studio 2022</a>
 - SDK: <a href="https://dotnet.microsoft.com/pt-br/download/dotnet/8.0">.Net 8</a>
-- XUnit: <a href="https://github.com/xunit/xunit">.Net 8</a>
+- xUnit: <a href="https://github.com/xunit/xunit">xUnit para Testes</a>
   
 <h2 id=author>😎 Autor</h2>
 
