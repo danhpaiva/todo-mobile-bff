@@ -64,7 +64,7 @@ namespace TodoMobileBff.Tests.Tests
         public async Task GetTodoItemByIdAsync_ReturnsExpectedItem_OnSuccess()
         {
             // Arrange
-            var expectedItem = new TodoItem { Id = 10, Name = "Specific Item", IsComplete = false, Secret = "SpecificS" };
+            var expectedItem = new TodoItem { Id = 10, Name = "Specific Item", IsComplete = false};
             var jsonResponse = JsonSerializer.Serialize(expectedItem);
 
             var mockHttpMessageHandler = new Mock<HttpMessageHandler>();
