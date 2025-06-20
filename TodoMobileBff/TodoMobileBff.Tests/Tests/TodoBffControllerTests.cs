@@ -58,7 +58,7 @@ namespace TodoMobileBff.Tests.Tests
         public async Task GetTodoById_ReturnsTodoItemDto_WhenFound()
         {
             // Arrange
-            var todoItemFromApi = new TodoItem { Id = 1, Name = "Single Task", IsComplete = false, Secret = "SingleSecret" };
+            var todoItemFromApi = new TodoItem { Id = 1, Name = "Single Task", IsComplete = false};
 
             _mockTodoApiClient.Setup(client => client.GetTodoItemByIdAsync(1))
                                .ReturnsAsync(todoItemFromApi);
