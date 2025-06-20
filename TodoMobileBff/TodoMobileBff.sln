@@ -5,6 +5,8 @@ VisualStudioVersion = 17.14.36203.30 d17.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TodoMobileBff", "TodoMobileBff\TodoMobileBff.csproj", "{9B7EC3EC-8F46-40A3-9868-FF80E84AFA14}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TodoMobileBff.Tests", "TodoMobileBff.Tests\TodoMobileBff.Tests.csproj", "{F0A7B223-B3A7-44CF-B187-AB223F5EEA88}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{9B7EC3EC-8F46-40A3-9868-FF80E84AFA14}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9B7EC3EC-8F46-40A3-9868-FF80E84AFA14}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9B7EC3EC-8F46-40A3-9868-FF80E84AFA14}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F0A7B223-B3A7-44CF-B187-AB223F5EEA88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0A7B223-B3A7-44CF-B187-AB223F5EEA88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F0A7B223-B3A7-44CF-B187-AB223F5EEA88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F0A7B223-B3A7-44CF-B187-AB223F5EEA88}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
