@@ -15,10 +15,11 @@ namespace TodoMobileBff.Tests.Tests
         {
             // Arrange
             var expectedItems = new List<TodoItem>
-        {
-            new TodoItem { Id = 1, Name = "Item 1", IsComplete = false},
-            new TodoItem { Id = 2, Name = "Item 2", IsComplete = true}
-        };
+                {
+                    new TodoItem { Id = 1, Name = "Item 1", IsComplete = false},
+                    new TodoItem { Id = 2, Name = "Item 2", IsComplete = true}
+                };
+
             var jsonResponse = JsonSerializer.Serialize(expectedItems);
 
             var mockHttpMessageHandler = new Mock<HttpMessageHandler>();
@@ -54,7 +55,7 @@ namespace TodoMobileBff.Tests.Tests
                 ItExpr.Is<HttpRequestMessage>(req =>
                     req.Method == HttpMethod.Get &&
                     req.RequestUri != null && // Verifica se RequestUri não é null
-                    req.RequestUri.ToString().Contains("https://api.example.com/todos") // Verifica a URL base
+                    req.RequestUri.ToString().Contains("http://localhost:5097/api/TodoItems")
                 ),
                 ItExpr.IsAny<CancellationToken>()
             );
@@ -64,14 +65,14 @@ namespace TodoMobileBff.Tests.Tests
         public async Task GetTodoItemByIdAsync_ReturnsExpectedItem_OnSuccess()
         {
             // Arrange
-            var expectedItem = new TodoItem { Id = 10, Name = "Specific Item", IsComplete = false};
+            var expectedItem = new TodoItem { Id = 10, Name = "Specific Item", IsComplete = false };
             var jsonResponse = JsonSerializer.Serialize(expectedItem);
 
             var mockHttpMessageHandler = new Mock<HttpMessageHandler>();
             mockHttpMessageHandler.Protected()
                 .Setup<Task<HttpResponseMessage>>(
                     "SendAsync",
-                    ItExpr.Is<HttpRequestMessage>(req => req.RequestUri != null && req.RequestUri.ToString().Contains("/todos/10")), // Verifica a URL específica
+                    ItExpr.Is<HttpRequestMessage>(req => req.RequestUri != null && req.RequestUri.ToString().Contains("/TodoItems/1")), // Verifica a URL específica
                     ItExpr.IsAny<CancellationToken>()
                 )
                 .ReturnsAsync(new HttpResponseMessage
