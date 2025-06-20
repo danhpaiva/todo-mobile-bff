@@ -6,7 +6,7 @@ using Moq.Protected;
 using TodoMobileBff.Models;
 using TodoMobileBff.Services.Implementations;
 
-namespace TodoMobileBff.Tests.Tests
+namespace TodoMobileBff.Tests.ServicesTests
 {
     public class TodoApiClientTests
     {

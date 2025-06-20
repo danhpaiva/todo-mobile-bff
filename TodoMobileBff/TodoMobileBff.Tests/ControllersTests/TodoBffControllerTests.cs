@@ -4,7 +4,7 @@ using TodoMobileBff.Controllers;
 using TodoMobileBff.Models;
 using TodoMobileBff.Services.Interfaces;
 
-namespace TodoMobileBff.Tests.Tests
+namespace TodoMobileBff.Tests.ControllersTests
 {
     public class TodoBffControllerTests
     {
